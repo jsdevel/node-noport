@@ -1,0 +1,41 @@
+{
+  "name": "noport",
+  "main": "lib/noport.js",
+  "version": "0.0.0",
+  "description": "An http server that listens on a random port.  Useful for testing.",
+  "author": "Joseph  Spencer",
+  "scripts": {
+    "jshint": "jshint lib && jshint --config .jshintrc-test test",
+    "mocha": "mocha -w",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "report": "istanbul report cobertura",
+    "test": "npm run jshint && npm run cover"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdevel/node-noport.git"
+  },
+  "keywords": [
+    "random",
+    "http",
+    "server",
+    "port",
+    "testing"
+  ],
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsdevel/node-noport/issues"
+  },
+  "devDependencies": {
+    "should": "~3.3.2",
+    "mocha": "~1.19.0",
+    "istanbul": "~0.2.10",
+    "jshint": "~2.5.1",
+    "request": "~2.36.0",
+    "express": "~4.3.1"
+  },
+  "dependencies": {
+    "q": "~1.0.1"
+  }
+}
