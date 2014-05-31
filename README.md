@@ -1,4 +1,4 @@
-# noport [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
+# noport [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] 
 > An http server that listens on a random port.  Useful for testing.
 
 ## Why ?
@@ -57,6 +57,3 @@ THE SOFTWARE.
 
 [travis-url]: https://travis-ci.org/jsdevel/node-noport
 [travis-image]: http://img.shields.io/travis/jsdevel/node-noport.svg
-
-[coveralls-url]: https://coveralls.io/r/jsdevel/node-noport
-[coveralls-image]: http://img.shields.io/coveralls/jsdevel/node-noport/master.svg
