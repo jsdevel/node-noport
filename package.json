@@ -1,7 +1,7 @@
 {
   "name": "noport",
   "main": "lib/noport.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An http server that listens on a random port.  Useful for testing.",
   "author": "Joseph  Spencer",
   "scripts": {
