@@ -38,4 +38,27 @@ describe('noport', function(){
       });
     });
   });
+
+  it('should return a different server when reset is called', function(done){
+    sut.for(app);
+    sut.get(function(err, server1, port){
+      sut.reset();
+      sut.for(function(req, res){});
+      sut.get(function(err, server2, port2){
+        port.should.not.equal(port2);
+        server1.should.not.equal(server2);
+        done();
+      });
+    });
+  });
+
+  describe('reset', function(){
+    beforeEach(function(){
+      sut.reset();
+    });
+
+    it('should do nothing when there is no server', function(){
+      sut.reset();
+    });
+  });
 });

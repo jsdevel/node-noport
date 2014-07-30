@@ -1,4 +1,4 @@
-# noport [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] 
+# noport [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url]
 > An http server that listens on a random port.  Useful for testing.
 
 ## Why ?
@@ -6,13 +6,13 @@ Often times we need to run tests against our applications that spin up http serv
 This is easy enough locally when the used ports are known, but what about environments
 where multiple servers may be running?
 
-This module allows one to gain access to an http server that will always have a 
+This module allows one to gain access to an http server that will always have a
 non conflicting port provisioned.
 
 ## Usage
 
 First you need to call `for()` with your application.  An application is nothing
-other than a function.  At any time you can call `get()` to gain access to the 
+other than a function.  At any time you can call `get()` to gain access to the
 newly created server.
 
 ````javascript
@@ -24,6 +24,8 @@ noport.for(app);
 noport.get(function(err, server, port){
   server.address().port === port;
 });
+
+noport.reset();//calls .close() on the current server
 ````
 
 ##LICENSE
